@@ -8,16 +8,11 @@ import { useSiteConfig } from "@/hooks/use-site-config"
 import type { AttireColor } from "@/content/site"
 import Image from "next/image"
 import localFont from "next/font/local"
-import { Cinzel } from "next/font/google"
+import { cinzel } from "@/lib/fonts"
 import { Shirt, Copy, Check, Navigation, Heart, MapPin } from "lucide-react"
 import { motion, useReducedMotion, type Variants } from "motion/react"
 import { PlainBubbles } from "@/components/loader/PlainBubbles"
 import { SectionBackdrop } from "@/components/section-backdrop"
-
-const cinzel = Cinzel({
-  subsets: ["latin"],
-  weight: ["400", "600", "700"],
-})
 
 const theSeasons = localFont({
   src: "../../Font/Fontspring-DEMO-theseasons-reg.otf",
@@ -73,7 +68,6 @@ const softPanelStyle = {
 // Primary button: dusty rose → charcoal with white text (matches the rest of the invitation)
 const primaryButtonBg =
   "linear-gradient(180deg, var(--color-welcome-heading) 0%, color-mix(in srgb, var(--color-welcome-heading) 72%, var(--color-welcome-navy)) 100%)"
-
 
 // Warm-gray hairlines either side of a round blush-edged icon
 function SectionIconDivider({ icon }: { icon: ReactNode }) {
@@ -977,7 +971,6 @@ export function Details() {
             </p>
           </div>
           )}
-
 
           <div className="mx-auto mb-6 w-full max-w-3xl space-y-5 sm:mb-8 sm:space-y-6 md:mb-10">
             {attireGroups.map((group) => {

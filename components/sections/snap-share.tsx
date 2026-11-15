@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { motion } from "motion/react"
-import { Cinzel } from "next/font/google"
+import { cinzel } from "@/lib/fonts"
 import localFont from "next/font/local"
 import { Instagram, Facebook, Twitter, Share2, Copy, Download, Check, BookOpen } from "lucide-react"
 import { useQrColors } from "@/hooks/use-css-color"
@@ -11,11 +11,6 @@ import { useSiteConfig } from "@/hooks/use-site-config"
 import { layeredSectionTitleSize, sectionType } from "@/lib/section-typography"
 import Image from "next/image"
 import { CrossfadeImages } from "@/components/crossfade-images"
-
-const cinzel = Cinzel({
-  subsets: ["latin"],
-  weight: ["400", "600", "700"],
-})
 
 const theSeasons = localFont({
   src: "../../Font/Fontspring-DEMO-theseasons-reg.otf",
@@ -86,7 +81,6 @@ const cardStyle = {
   boxShadow:
     "0 0 0 5px rgb(255 255 255 / 25%), 0 24px 50px -28px color-mix(in srgb, var(--color-welcome-navy) 55%, transparent)",
 } as const
-
 
 // The Seasons has no clean glyphs for symbols / digits — render only those
 // characters (e.g. "#", "&", numbers) in Cinzel, keep letters in The Seasons.

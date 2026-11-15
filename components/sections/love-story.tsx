@@ -2,7 +2,7 @@
 
 import React, { useMemo } from "react"
 import localFont from "next/font/local"
-import { Cinzel } from "next/font/google"
+import { cinzel } from "@/lib/fonts"
 import { motion, useReducedMotion } from "motion/react"
 import { StorySection } from "@/components/StorySection"
 import { layeredSectionTitleSize, sectionType } from "@/lib/section-typography"
@@ -26,13 +26,7 @@ const aboveTheBeyond = localFont({
   variable: "--font-above-beyond",
 })
 
-const cinzel = Cinzel({
-  subsets: ["latin"],
-  weight: ["400", "600", "700"],
-})
-
 const revealEase = [0.22, 1, 0.36, 1] as const
-
 
 // Soft white edge so text stays crisp over the sky backdrop
 const onBgGlow = "0 1px 0 rgb(255 249 244 / 85%), 0 0 12px rgb(255 249 244 / 70%)"

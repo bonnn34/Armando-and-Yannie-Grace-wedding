@@ -2,7 +2,7 @@
 
 import { useQrColors } from "@/hooks/use-css-color"
 import { QRCodeSVG } from "qrcode.react"
-import { Cinzel } from "next/font/google"
+import { cinzel } from "@/lib/fonts"
 import localFont from "next/font/local"
 import { Video } from "lucide-react"
 import { useSiteConfig } from "@/hooks/use-site-config"
@@ -14,11 +14,6 @@ import {
   sectionPalette,
   sectionText,
 } from "@/lib/section-background"
-
-const cinzel = Cinzel({
-  subsets: ["latin"],
-  weight: ["400", "600", "700"],
-})
 
 const theSeasons = localFont({
   src: "../../Font/Fontspring-DEMO-theseasons-reg.otf",
@@ -34,7 +29,6 @@ const aboveTheBeyond = localFont({
 
 const FORM_URL =
   "https://docs.google.com/forms/d/e/1FAIpQLSfeGlEl4CMXWefdvCw6AOPHFS1ROku_rs-Gbofa2LkVJ0sLGQ/viewform"
-
 
 const cardStyle = {
   background: "var(--color-welcome-bg)",

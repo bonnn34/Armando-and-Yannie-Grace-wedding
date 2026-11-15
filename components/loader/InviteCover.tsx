@@ -3,14 +3,13 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Image from 'next/image';
 import localFont from 'next/font/local';
-import { Great_Vibes } from 'next/font/google';
+import { greatVibes } from "@/lib/fonts"
 import { motion, useReducedMotion, type Transition, type Variants } from 'motion/react';
 import { useSiteConfig } from '@/hooks/use-site-config';
 import { siteConfig as defaultSiteConfig } from '@/content/site';
 import './invite-cover.css';
 
 // "You are" — flowing script
-const greatVibes = Great_Vibes({ subsets: ['latin'], weight: '400', display: 'swap' });
 
 // "INVITED!", names, date and button — classic Roman capitals (Font/Cinzel)
 const cinzel = localFont({
