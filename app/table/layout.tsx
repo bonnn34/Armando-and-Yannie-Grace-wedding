@@ -1,0 +1,38 @@
+import type { Metadata } from "next"
+import { siteConfig, canonicalSiteUrl } from "@/content/site"
+import { TABLE_FINDER_PATH } from "@/lib/table-finder"
+
+const canonicalUrl = `${canonicalSiteUrl}${TABLE_FINDER_PATH}`
+const coupleNames = `${siteConfig.couple.groomNickname} & ${siteConfig.couple.brideNickname}`
+const previewImageUrl = `${canonicalSiteUrl}${siteConfig.linkPreviewImage}`
+
+export const metadata: Metadata = {
+  title: "Find Your Table",
+  description: `Search your name to find your table at ${coupleNames}'s wedding reception.`,
+  alternates: {
+    canonical: canonicalUrl,
+  },
+  openGraph: {
+    title: `Find Your Table | ${coupleNames}`,
+    description: `Search your name to find your table at ${coupleNames}'s wedding reception.`,
+    url: canonicalUrl,
+    siteName: `${coupleNames} Wedding`,
+    locale: "en_PH",
+    type: "website",
+    // Next replaces the root openGraph here instead of merging it, so the image must be repeated
+    images: [
+      {
+        url: previewImageUrl,
+        secureUrl: previewImageUrl,
+        width: 1200,
+        height: 630,
+        type: "image/jpeg",
+        alt: `${coupleNames} Wedding Invitation`,
+      },
+    ],
+  },
+}
+
+export default function TableFinderLayout({ children }: { children: React.ReactNode }) {
+  return children
+}
