@@ -83,7 +83,7 @@ const TIMES = {
   ceremony: "1:00 PM",
   photoSession: "2:00 PM",
   cocktailHour: "2:30 PM",
-  reception: "3:30 PM", // start of program
+  reception: "2:30 PM", // start of program
   grandEntrance: "3:45 PM",
   weddingFeast: "4:00 PM",
   cakeCutting: "5:00 PM",
@@ -100,8 +100,8 @@ const CEREMONY_VENUE = {
   photos: ["/Details/new-ceremony (1).webp", "/Details/new-ceremony (2).webp", "/Details/new-ceremony (3).webp"],
 }
 const RECEPTION_VENUE = {
-  name: " Sheperds Palace, Dalayap, Candaba, Pampanga",
-  address: "brgy Candaba, Pampanga, Philippines",
+  name: "Hotel Elizabeth (Grand Santorini Ballroom)",
+  address: "Grand Santorini Ballroom",
   map: "https://maps.app.goo.gl/buRWssEcVn2vuJxf7",
   photos: ["/Details/reception (4).jpg", "/Details/reception (5).jpg", "/Details/reception (6).jpg"],
 }
@@ -152,7 +152,7 @@ const RSVP = {
   coordinator: "{groom} / {bride}", // {groom} / {bride} → couple nicknames
   phone: "to be announced",
 }
-const HASHTAGS = ["#YannieGraceSaidArmandoDo"]
+const HASHTAGS = ["#SiYannieangGracianiArmando"]
 
 // ── Attire guide (Event Details → Attire Guidelines) ────────────────────────
 // SHOW = which cards to display AND their order, top to bottom. Examples:
@@ -548,10 +548,10 @@ export const siteConfig = {
   // Thank-you messages to family and friends (components/sections/love-story.tsx + StorySection)
   loveStory: {
     title: "Our Love Story",
-    subtitle: "from simple chats to forever",
+    subtitle: "",
     // Short opening line under the title ("" hides it)
     intro:
-      "Two chat mates, countless adventures and one unforgettable yes: this is the story of how a simple conversation grew into a forever.",
+      "",
     // Photo description used when a chapter has no imageAlt
     photoAlt: "{groom} and {bride}",
     // Closing block under the last chapter: big word, hashtag, then the verse
@@ -764,6 +764,13 @@ export const siteConfig = {
             "To keep the focus on the celebration, we kindly ask that there be no surprise announcements or proposals during our wedding.",
           ],
         },
+          {
+          title: "Health Protocol",
+          variant: "soft" as "accent" | "soft",
+          paragraphs: [
+            "For everyone’s comfort and safety, kindly wear a mask if you’re feeling unwell, refrain from smoking, and sanitize whenever needed. Thank you for helping keep everyone safe! 💗",
+        ],
+      },
       ],
     },
   },
@@ -837,7 +844,7 @@ export const siteConfig = {
         icon: "rings" as TimelineIconName,
       },
       {
-        show: true,
+        show: false,
         time: TIMES.cocktailHour,
         title: "Cocktail Hour",
         description: "Refreshments while we make our way to the reception.",
@@ -850,12 +857,12 @@ export const siteConfig = {
         time: TIMES.reception,
         title: "Start of Program Proper",
         description: "",
-        location: "{reception}",
+        location: "Hotel Elizabeth (Grand Santorini Ballroom)",
         image: "/weddingtimeline/reception welcom.png",
         icon: "fireworks" as TimelineIconName,
       },
       {
-        show: true,
+        show: false,
         time: TIMES.grandEntrance,
         title: "Grand Entrance",
         description: "Welcome the newlyweds as husband and wife.",
@@ -864,7 +871,7 @@ export const siteConfig = {
         icon: "fireworks" as TimelineIconName,
       },
       {
-        show: true,
+        show: false,
         time: TIMES.weddingFeast,
         title: "Wedding Feast",
         description: "Let's share a meal and celebrate together.",
@@ -873,7 +880,7 @@ export const siteConfig = {
         icon: "cocktail" as TimelineIconName,
       },
       {
-        show: true,
+        show: false,
         time: TIMES.cakeCutting,
         title: "Cake Cutting",
         description: "",
@@ -882,7 +889,7 @@ export const siteConfig = {
         icon: "fireworks" as TimelineIconName,
       },
       {
-        show: true,
+        show: false,
         time: TIMES.firstDance,
         title: "First Dance",
         description: "Our first dance as husband and wife.",
@@ -891,7 +898,7 @@ export const siteConfig = {
         icon: "dance" as TimelineIconName,
       },
       {
-        show: true,
+        show: false,
         time: TIMES.closing,
         title: "Closing Moments",
         description: "Thank you for celebrating with us!",
@@ -1221,8 +1228,8 @@ export const siteConfig = {
     zoomNote: "Sample QR code for preview only. Actual payment details will be provided soon.",
     // Template QR images until the client provides their payment QR codes.
     accounts: [
-      { show: true, label: "GCash", accountName: "Account Name", accountNumber: "09XX XXX XXXX", qr: "/QR/sampleqr.png" },
-      { show: true, label: "GOtyme", accountName: "Account Name", accountNumber: "XXXX XXXX XXXX", qr: "/QR/sampleqr.png" },
+      { show: true, label: "GCash", accountName: "Account Name", accountNumber: "099 9332 2650", qr: "/QR/ARMAGCASH.jpg" },
+      { show: true, label: "bpi", accountName: "Account Name", accountNumber: "XXXX XXXX XXXX", qr: "/QR/BPI.jpg" },
     ] as { show: boolean; label: string; accountName: string; accountNumber: string; qr: string }[],
   },
   // Table finder page (/table — components/table-finder.tsx)
