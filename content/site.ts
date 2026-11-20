@@ -172,10 +172,10 @@ const HASHTAGS = ["#SiYannieangGracianiArmando"]
 //     highlight: phrase inside details shown bold + underlined ("" for none)
 // Guest dress code colors — also shown in the "Dress Code" gentle reminder
 const DRESS_CODE_PALETTE: AttireColor[] = [
-  { name: "Dusty Rose", hex: "#C98096" },
-  { name: "Powder Blue", hex: "#789CC1" },
-  { name: "Ivory", hex: "#F2E7DA" },
-  { name: "Black", hex: "#211E20" },
+  { name: "Blush Pink", hex: "#D69AAE" },
+  { name: "Sage Green", hex: "#92977B" },
+  { name: "Champagne", hex: "#E8D6BC" },
+  { name: "Beige", hex: "#B8A08B" },
 ];
 
 // Attire groups shown in the Details section (components/sections/details.tsx).
@@ -279,16 +279,16 @@ const ATTIRE = {
 
 guests: {
   title: "Wedding Guests",
-  image: "/Details/guest.png",
+  image: "/Details/Elegant Filipiniana Wedding Party.png",
   dressCode: "Semi-Formal Attire",
   palette: DRESS_CODE_PALETTE,
 
-  note: "Celebrate with us in dusty rose, powder blue, ivory, and black for an elegant, coordinated look inspired by our wedding palette.",
+  note: "Celebrate with us in blush pink, sage green, champagne, and beige for an elegant, coordinated look inspired by our wedding palette.",
 
   ladies: {
     label: "Ladies",
     details:
-      "Elegant midi or long dresses in dusty rose or powder blue. Soft, flowing fabrics such as chiffon, satin, or tulle are encouraged.",
+      "Elegant midi or long dresses in blush pink or sage green. Soft, flowing fabrics such as chiffon, satin, or tulle are encouraged.",
     highlight: "Midi or Long Dresses",
     roles: [] as { role: string; attire: string }[],
   },
@@ -296,7 +296,7 @@ guests: {
   gentlemen: {
     label: "Gentlemen",
     details:
-      "Embroidered ivory barongs paired with black tailored trousers and polished black shoes.",
+      "Beige suits and Embroidered ivory barongs paired with black tailored trousers and polished black shoes.",
     highlight: "Embroidered Ivory Barongs",
     roles: [] as { role: string; attire: string }[],
   },
