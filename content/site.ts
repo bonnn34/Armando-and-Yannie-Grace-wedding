@@ -148,7 +148,7 @@ const VENUE_CARDS = {
 
 // ── RSVP & contact ──────────────────────────────────────────────────────────
 const RSVP = {
-  deadline: "November 20, 2026",
+  deadline: "December 1, 2026",
   coordinator: "{groom} / {bride}", // {groom} / {bride} → couple nicknames
   phone: "to be announced",
 }
@@ -190,15 +190,14 @@ const ATTIRE = {
   entourage: {
     title: "Entourage",
     image: "/Details/entourage.png",
-    dressCode: "Formal Attire",
+    dressCode: "SEMI - FORMAL / CORDILLERAN ATTIRE",
     palette: [
       { name: "Dusty Rose", hex: "#D696A5" },
       { name: "Ivory", hex: "#F3E8DC" },
-      { name: "Light Gray", hex: "#A8A8AC" },
       { name: "Black", hex: "#211E20" },
     ] as AttireColor[],
 
-    note: "Dusty rose gowns paired with embroidered ivory barongs and black trousers, with the groom in a light gray suit.",
+    note: "Dusty rose gowns paired with embroidered ivory barongs and black trousers, and elegant cordilleran attire",
 
     ladies: {
       label: "Bridesmaids & Flower Girls",
@@ -211,7 +210,7 @@ const ATTIRE = {
     gentlemen: {
       label: "Groomsmen & Bearers",
       details:
-        "Embroidered ivory barongs paired with black trousers and polished black shoes. The groom wears a light gray suit with a floral boutonniere.",
+        "Embroidered ivory barongs paired with black trousers and polished black shoes.",
       highlight: "Embroidered Ivory Barongs",
       roles: [] as { role: string; attire: string }[],
     },
@@ -674,7 +673,7 @@ export const siteConfig = {
     // Cards, colors, images and which groups show → QUICK SETUP → ATTIRE
     attire: {
       title: "Attire Guidelines",
-      description: "We invite our guests to wear elegant shades of blue, creating a beautiful and coordinated look for our special day.",
+      description: " ",
       // Shown above a card's palette
       paletteTitle: "Dress Code Palette",
       paletteSubtitle: "", // script line under the palette title — "" hides it
