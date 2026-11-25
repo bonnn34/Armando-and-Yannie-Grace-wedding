@@ -1140,16 +1140,6 @@ export const siteConfig = {
           "Please message us first, as our guest list is limited. If a seat becomes available, we will let you know as soon as we can. Kindly do not attend unannounced, as we may not have a seat prepared for you.",
       },
       {
-        question: 'Can I bring a "Plus One"?',
-        answer:
-          "As much as we would love to celebrate with everyone, our venue and guest list are limited. Our wedding is strictly by invitation, and only the names reserved for you on the guest list can be accommodated.",
-      },
-      {
-        question: "Are children invited?",
-        answer:
-          "We love your little ones, but our celebration is adults-only unless the bride or groom has personally invited your child to attend. Otherwise, we kindly ask that you make childcare arrangements. We hope this gives you a relaxing day off to celebrate with us!",
-      },
-      {
         question: "May we choose our own seats at the reception?",
         answer:
           "We kindly ask that you take the seat reserved for you. Each table has been arranged with care so you can share the celebration with the people we hoped you would sit with.",
